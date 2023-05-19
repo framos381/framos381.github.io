@@ -21,7 +21,7 @@ function makeMoo(){
     var input = document.getElementById("textbox").value;
     input = input.toUpperCase();
     var text1 = input.split(".");
-    var text2 = text1.join("_Moo");
+    var text2 = text1.join("-Moo");
     document.getElementById("textbox").value = text2;
 }
 
