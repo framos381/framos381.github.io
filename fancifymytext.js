@@ -2,8 +2,7 @@ var textbox = document.getElementById("textbox");
 
 function makeBigger(){
     textbox.style.fontSize="2em";
-    var biggerText = textbox.value;
-    document.getElementById("textbox").value = biggerText;
+    textbox.style.overflow = "hidden";
 }
 
 document.getElementById("fancy").addEventListener("change",function() {
