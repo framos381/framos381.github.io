@@ -4,14 +4,14 @@ function makeBigger(){
     textbox.style.fontSize="24pt";
 }
 
-document.getElementByName("fancification")[0].addEventListener("change",function() {
+document.getElementById("fancy").addEventListener("change",function() {
     textbox.style.color = "blue";
     textbox.style.fontWeight="bold";
     textbox.style.textDecoration="underline";
     alert("Look at the style!");
 })
 
-document.getElementByName("fancification")[1].addEventListener("change",function() {
+document.getElementById("boring").addEventListener("change",function() {
     textbox.style.color="black";
     textbox.style.fontweight="normal";
     textbox.style.textDecoration="none";
