@@ -12,7 +12,7 @@ document.getElementById("fancy").addEventListener("change",function() {
 
 document.getElementById("boring").addEventListener("change",function() {
     textbox.style.color="black";
-    textbox.style.fontweight="normal";
+    textbox.style.fontweight="lighter";
     textbox.style.textDecoration="none";
     alert("style is gone :(");
 })
