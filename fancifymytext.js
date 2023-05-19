@@ -1,7 +1,8 @@
 var textbox = document.getElementById("textbox");
 
 function makeBigger(){
-    var biggerText = textbox.style.fontSize="2em";
+    textbox.style.fontSize="2em";
+    var biggerText = textbox.value;
     document.getElementById("textbox").value = biggerText;
 }
 
