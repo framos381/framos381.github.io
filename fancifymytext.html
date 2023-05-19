@@ -12,21 +12,19 @@
 		
 
 		<!-- Your UI controls go here -->
-		<form>
-			<fieldset>
-				<legend>Text</legend>
-				<textarea id="textbox" rows="4" cols="30"></textarea>
-			</fieldset>
-			<fieldset>
-				<legend>fancify</legend>
-				<button onclick ="makeBigger()">Bigger!</button>
-				<input type="radio" id="fancy">
-					<label for ="FancyShmancy">FancyShmancy</label>
-				<input type="radio" id="boring">
-					<label for ="BoringBetty">BoringBetty</label>
-				<button onclick="makeMoo()">Moo</button>
-			</fieldset>
-		</form>
+		l<label for="text">Text</label>
+		<fieldset name = "text">
+			<textarea id="textbox" rows="4" cols="30"></textarea>
+		</fieldset>
+		<label for="fancify">fancify</label>
+		<fieldset name = "fancifyBtns">
+			<button name = "bigBtn" onclick ="makeBigger()">Bigger!</button>
+			<input type="radio" id="fancy">
+				<label for ="FancyShmancy">FancyShmancy</label>
+			<input type="radio" id="boring">
+				<label for ="BoringBetty">BoringBetty</label>
+			<button name = "mooBtn" onclick="makeMoo()">Moo</button>
+		</fieldset>
 	</body>
 	<script src="fancifymytext.js"></script>
 </html>
