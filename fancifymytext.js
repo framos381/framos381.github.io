@@ -1,7 +1,8 @@
 var textbox = document.getElementById("textbox");
 
 function makeBigger(){
-    textbox.style.fontSize="24pt";
+    var biggerText = textbox.style.fontSize="2em";
+    document.getElementById("textbox").value = biggerText;
 }
 
 document.getElementById("fancy").addEventListener("change",function() {
@@ -19,9 +20,10 @@ document.getElementById("boring").addEventListener("change",function() {
 })
 
 function makeMoo(){
-    textbox.style.textTransform = "uppercase";
-    let text1 = textbox.value.split(".");
-    let text2 = text1.join("-Moo");
-    textbox.value = text2;
+    var input = document.getElementById("textbox").value;
+    input = input.toUpperCase();
+    var text1 = input.split(".");
+    var text2 = text1.join("_Moo");
+    document.getElementById("textbox").value = text2;
 }
 
