@@ -1,7 +1,6 @@
 var textbox = document.getElementById("textbox");
 function makeBigger(){
-    textbox.style.fontSize = "2em";
-    textbox.style.overflow = "auto";
+    document.getElementById("textbox").style.fontSize = "48pt";
 }
 
 document.getElementById("fancy").addEventListener("change",function() {
